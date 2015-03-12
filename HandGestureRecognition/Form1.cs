@@ -43,6 +43,7 @@ namespace HandGestureRecognition
         public Form1()
         {
             InitializeComponent();
+            /*
             grabber = new Emgu.CV.Capture(@".\..\..\..\M2U00253.MPG");            
             grabber.QueryFrame();
             frameWidth = grabber.Width;
@@ -55,7 +56,8 @@ namespace HandGestureRecognition
             box = new MCvBox2D();
             ellip = new Ellipse();
 
-            Application.Idle += new EventHandler(FrameGrabber);                        
+            Application.Idle += new EventHandler(FrameGrabber);     
+          */
         }
 
         void FrameGrabber(object sender, EventArgs e)
@@ -208,6 +210,17 @@ namespace HandGestureRecognition
 
             MCvFont font = new MCvFont(Emgu.CV.CvEnum.FONT.CV_FONT_HERSHEY_DUPLEX, 5d, 5d);
             currentFrame.Draw(fingerNum.ToString(), ref font, new Point(50, 150), new Bgr(Color.White));
+        }
+
+        private void wyjścieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ustawieniaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form2 sett = new Form2();
+            sett.Show();
         }
                                       
     }

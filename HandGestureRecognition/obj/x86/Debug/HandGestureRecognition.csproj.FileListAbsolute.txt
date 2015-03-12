@@ -44,3 +44,20 @@ G:\Zespołowy projekt programowania\HandGestureRecognition_Code\HandGestureRecog
 G:\Zespołowy projekt programowania\HandGestureRecognition_Code\HandGestureRecognition\HandGestureRecognition\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form1.resources
 G:\Zespołowy projekt programowania\HandGestureRecognition_Code\HandGestureRecognition\HandGestureRecognition\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Properties.Resources.resources
 G:\Zespołowy projekt programowania\HandGestureRecognition_Code\HandGestureRecognition\HandGestureRecognition\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.csproj.GenerateResource.Cache
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe.config
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.exe
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.pdb
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.csprojResolveAssemblyReference.cache
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form1.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form2.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Properties.Resources.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.csproj.GenerateResource.Cache
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\cvextern.dll
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.pdb
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\Emgu.CV.dll
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\Emgu.CV.UI.dll
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\Emgu.Util.dll
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.dll
+E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.pdb
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form3.resources
