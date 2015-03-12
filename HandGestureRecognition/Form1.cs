@@ -66,7 +66,7 @@ namespace HandGestureRecognition
             if (currentFrame != null)
             {
                 currentFrameCopy = currentFrame.Copy();
-                
+                // maq chuj ci w dupe
                 // Uncomment if using opencv adaptive skin detector
                 //Image<Gray,Byte> skin = new Image<Gray,byte>(currentFrameCopy.Width,currentFrameCopy.Height);                
                 //detector.Process(currentFrameCopy, skin);                
