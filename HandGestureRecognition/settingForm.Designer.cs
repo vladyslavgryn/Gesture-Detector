@@ -44,10 +44,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
-            this.label3 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -74,7 +74,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(521, 321);
+            this.tabPage1.Size = new System.Drawing.Size(521, 319);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ogólne";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -158,6 +158,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "Edytuj";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -233,15 +234,6 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(259, 258);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // listView1
-            // 
-            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listView1.Location = new System.Drawing.Point(4, 23);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(121, 231);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // listView2
             // 
             this.listView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -251,23 +243,32 @@
             this.listView2.TabIndex = 1;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
-            // label3
+            // listView1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(42, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Gesty";
+            this.listView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listView1.Location = new System.Drawing.Point(4, 23);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(121, 231);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(195, 5);
+            this.label4.Location = new System.Drawing.Point(133, 1);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Akcje";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 1);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Gesty";
             // 
             // SettingForm
             // 

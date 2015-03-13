@@ -48,8 +48,6 @@ E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.exe.
 E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.exe
 E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.pdb
 E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.csprojResolveAssemblyReference.cache
-E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form1.resources
-E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form2.resources
 E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Properties.Resources.resources
 E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.csproj.GenerateResource.Cache
 E:\Gesture-Detector\HandGestureRecognition\bin\Debug\cvextern.dll
@@ -60,4 +58,7 @@ E:\Gesture-Detector\HandGestureRecognition\bin\Debug\Emgu.CV.UI.dll
 E:\Gesture-Detector\HandGestureRecognition\bin\Debug\Emgu.Util.dll
 E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.dll
 E:\Gesture-Detector\HandGestureRecognition\bin\Debug\HandGestureRecognition.SkinDetector.pdb
-E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.Form3.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.MainForm.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.SettingForm.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.ActionForm.resources
+E:\Gesture-Detector\HandGestureRecognition\obj\x86\Debug\HandGestureRecognition.GestureForm.resources
