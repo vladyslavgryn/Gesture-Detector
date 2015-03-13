@@ -20,7 +20,6 @@ namespace HandGestureRecognition
         Image<Bgr, Byte> currentFrame;
         Image<Bgr, Byte> currentFrameCopy;
                 
-        Capture grabber;
         AdaptiveSkinDetector detector;
         
         int frameWidth;
@@ -38,35 +37,34 @@ namespace HandGestureRecognition
         Rectangle handRect;
         MCvBox2D box;
         Ellipse ellip;
-
+        Capture capture;
         
         public MainForm()
         {
             InitializeComponent();
-            /*
-            grabber = new Emgu.CV.Capture(@".\..\..\..\M2U00253.MPG");            
-            grabber.QueryFrame();
-            frameWidth = grabber.Width;
-            frameHeight = grabber.Height;            
+
+            capture = new Emgu.CV.Capture(0);
+            //grabber = new Emgu.CV.Capture(@".\..\..\..\M2U00253.MPG");            
+            capture.QueryFrame();
+            frameWidth = capture.Width;
+            frameHeight = capture.Height;            
             detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE);
-            hsv_min = new Hsv(0, 45, 0); 
-            hsv_max = new Hsv(20, 255, 255);            
+            //hsv_min = new Hsv(0, 45, 0); 
+            //hsv_max = new Hsv(20, 255, 255);            
             YCrCb_min = new Ycc(0, 131, 80);
             YCrCb_max = new Ycc(255, 185, 135);
             box = new MCvBox2D();
             ellip = new Ellipse();
 
             Application.Idle += new EventHandler(FrameGrabber);     
-          */
         }
 
         void FrameGrabber(object sender, EventArgs e)
         {
-            currentFrame = grabber.QueryFrame();
+            currentFrame = capture.QueryFrame();
             if (currentFrame != null)
             {
                 currentFrameCopy = currentFrame.Copy();
-                // maq chuj ci w dupe
                 // Uncomment if using opencv adaptive skin detector
                 //Image<Gray,Byte> skin = new Image<Gray,byte>(currentFrameCopy.Width,currentFrameCopy.Height);                
                 //detector.Process(currentFrameCopy, skin);                
@@ -75,9 +73,8 @@ namespace HandGestureRecognition
                 
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy,YCrCb_min,YCrCb_max);
 
-                ExtractContourAndHull(skin);
-                                
-                DrawAndComputeFingersNum();
+                //ExtractContourAndHull(skin);
+                //DrawAndComputeFingersNum();
 
                 imageBoxSkin.Image = skin;
                 imageBoxFrameGrabber.Image = currentFrame;
@@ -222,6 +219,5 @@ namespace HandGestureRecognition
             SettingForm sett = new SettingForm();
             sett.Show();
         }
-                                      
     }
 }
