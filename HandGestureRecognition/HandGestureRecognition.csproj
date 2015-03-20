@@ -97,6 +97,10 @@
     <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DirectShowLib-2005, Version=2.1.0.0, Culture=neutral, PublicKeyToken=67e7b740cdfc2d3f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DirectShowLib-2005.dll</HintPath>
+    </Reference>
     <Reference Include="Emgu.CV">
       <HintPath>..\emgu_dlls\Emgu.CV.dll</HintPath>
     </Reference>
