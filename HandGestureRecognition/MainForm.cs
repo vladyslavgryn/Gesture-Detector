@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DirectShowLib;
 using Emgu.CV.Structure;
 using Emgu.CV;
 using HandGestureRecognition.SkinDetector;
@@ -24,6 +26,7 @@ namespace HandGestureRecognition
         
         int frameWidth;
         int frameHeight;
+        private int CameraDevice = 0;
         
         Hsv hsv_min;
         Hsv hsv_max;
@@ -43,20 +46,27 @@ namespace HandGestureRecognition
         {
             InitializeComponent();
 
-            capture = new Emgu.CV.Capture(0);
-            //grabber = new Emgu.CV.Capture(@".\..\..\..\M2U00253.MPG");            
-            capture.QueryFrame();
-            frameWidth = capture.Width;
-            frameHeight = capture.Height;            
-            detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE);
-            //hsv_min = new Hsv(0, 45, 0); 
-            //hsv_max = new Hsv(20, 255, 255);            
-            YCrCb_min = new Ycc(0, 131, 80);
-            YCrCb_max = new Ycc(255, 185, 135);
-            box = new MCvBox2D();
-            ellip = new Ellipse();
+            DsDevice[] _SystemCamereas = DsDevice.GetDevicesOfCat(FilterCategory.VideoInputDevice);
 
-            Application.Idle += new EventHandler(FrameGrabber);     
+            if (_SystemCamereas.Length == 0)
+                MessageBox.Show("Podłącz kamerę", "Camera error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else
+            {
+                capture = new Emgu.CV.Capture(CameraDevice);
+                //grabber = new Emgu.CV.Capture(@".\..\..\..\M2U00253.MPG");            
+                //capture.QueryFrame();
+                //frameWidth = capture.Width;
+                //frameHeight = capture.Width;
+                //detector = new AdaptiveSkinDetector(1, AdaptiveSkinDetector.MorphingMethod.NONE);
+                //hsv_min = new Hsv(0, 45, 0); 
+                //hsv_max = new Hsv(20, 255, 255);            
+                YCrCb_min = new Ycc(0, 131, 80);
+                YCrCb_max = new Ycc(255, 185, 135);
+                //box = new MCvBox2D();
+                //ellip = new Ellipse();
+
+                Application.Idle += new EventHandler(FrameGrabber);
+            }
         }
 
         void FrameGrabber(object sender, EventArgs e)
@@ -70,14 +80,13 @@ namespace HandGestureRecognition
                 //detector.Process(currentFrameCopy, skin);                
 
                 skinDetector = new YCrCbSkinDetector();
-                
                 Image<Gray, Byte> skin = skinDetector.DetectSkin(currentFrameCopy,YCrCb_min,YCrCb_max);
 
                 //ExtractContourAndHull(skin);
                 //DrawAndComputeFingersNum();
 
-                imageBoxSkin.Image = skin;
                 imageBoxFrameGrabber.Image = currentFrame;
+                imageBoxSkin.Image = skin;
             }
         }
                

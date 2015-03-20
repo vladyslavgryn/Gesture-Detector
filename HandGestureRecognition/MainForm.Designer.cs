@@ -37,6 +37,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.wyjścieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageBoxSkin = new Emgu.CV.UI.ImageBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.splitContainerFrames.Panel1.SuspendLayout();
             this.splitContainerFrames.Panel2.SuspendLayout();
@@ -49,7 +50,7 @@
             // 
             this.imageBoxFrameGrabber.Location = new System.Drawing.Point(0, 24);
             this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
-            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(337, 367);
+            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(522, 465);
             this.imageBoxFrameGrabber.TabIndex = 2;
             this.imageBoxFrameGrabber.TabStop = false;
             // 
@@ -67,8 +68,8 @@
             // splitContainerFrames.Panel2
             // 
             this.splitContainerFrames.Panel2.Controls.Add(this.imageBoxSkin);
-            this.splitContainerFrames.Size = new System.Drawing.Size(685, 391);
-            this.splitContainerFrames.SplitterDistance = 337;
+            this.splitContainerFrames.Size = new System.Drawing.Size(1062, 494);
+            this.splitContainerFrames.SplitterDistance = 522;
             this.splitContainerFrames.TabIndex = 3;
             // 
             // menuStrip1
@@ -77,7 +78,7 @@
             this.menuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(337, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(522, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,27 +96,27 @@
             // ustawieniaToolStripMenuItem
             // 
             this.ustawieniaToolStripMenuItem.Name = "ustawieniaToolStripMenuItem";
-            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ustawieniaToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.ustawieniaToolStripMenuItem.Text = "Ustawienia";
             this.ustawieniaToolStripMenuItem.Click += new System.EventHandler(this.ustawieniaToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(128, 6);
             // 
             // wyjścieToolStripMenuItem
             // 
             this.wyjścieToolStripMenuItem.Name = "wyjścieToolStripMenuItem";
-            this.wyjścieToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.wyjścieToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.wyjścieToolStripMenuItem.Text = "Wyjście";
             this.wyjścieToolStripMenuItem.Click += new System.EventHandler(this.wyjścieToolStripMenuItem_Click);
             // 
             // imageBoxSkin
             // 
-            this.imageBoxSkin.Location = new System.Drawing.Point(0, 0);
+            this.imageBoxSkin.Location = new System.Drawing.Point(0, 24);
             this.imageBoxSkin.Name = "imageBoxSkin";
-            this.imageBoxSkin.Size = new System.Drawing.Size(344, 391);
+            this.imageBoxSkin.Size = new System.Drawing.Size(533, 465);
             this.imageBoxSkin.TabIndex = 2;
             this.imageBoxSkin.TabStop = false;
             // 
@@ -123,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(685, 391);
+            this.ClientSize = new System.Drawing.Size(1062, 494);
             this.Controls.Add(this.splitContainerFrames);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
@@ -150,6 +151,7 @@
         private System.Windows.Forms.ToolStripMenuItem ustawieniaToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem wyjścieToolStripMenuItem;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

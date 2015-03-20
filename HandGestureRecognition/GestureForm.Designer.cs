@@ -50,15 +50,16 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(16, 30);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 20);
+            this.textBox1.Size = new System.Drawing.Size(311, 36);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 72);
+            this.button1.Location = new System.Drawing.Point(333, 30);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(145, 23);
+            this.button1.Size = new System.Drawing.Size(145, 36);
             this.button1.TabIndex = 2;
             this.button1.Text = "Przechwyć";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,15 +67,15 @@
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(186, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(513, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 177);
+            this.pictureBox1.Size = new System.Drawing.Size(485, 440);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(16, 226);
+            this.button2.Location = new System.Drawing.Point(16, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -83,7 +84,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(98, 225);
+            this.button3.Location = new System.Drawing.Point(97, 72);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
@@ -94,7 +95,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 13);
+            this.label2.Location = new System.Drawing.Point(510, 13);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 6;
@@ -104,7 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(391, 261);
+            this.ClientSize = new System.Drawing.Size(1021, 647);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
